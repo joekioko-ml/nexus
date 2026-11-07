@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "seed:resources": "tsc scripts/seed.ts --outDir node_modules/.cache/nexus-resource-seed --rootDir scripts --module commonjs --moduleResolution node --target ES2022 --esModuleInterop --resolveJsonModule --skipLibCheck && cp scripts/core-resources.json node_modules/.cache/nexus-resource-seed/core-resources.json && node node_modules/.cache/nexus-resource-seed/seed.js",
     "lint": "eslint"
   },
   "dependencies": {
