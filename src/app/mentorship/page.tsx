@@ -1,7 +1,6 @@
 import { Hero, Section, Card, TextLink } from "@/components/page-elements";
 import { Icon } from "@/components/icons";
 import { MentorshipStories } from "@/components/mentorship-stories";
-import { MentorshipStoryAdmin } from "@/components/mentorship-story-admin";
 
 export default function MentorshipPage() {
   return <div id="mentorship-page">
@@ -22,7 +21,6 @@ export default function MentorshipPage() {
     <Section eyebrow="Recent updates" title="Stories from the Nexus community." className="mentorship-section mentorship-stories-section">
       <p className="mt-4 max-w-2xl leading-7 text-[var(--muted)]">Small moments, shared ideas, and fresh perspectives from our community.</p>
       <div className="mt-8"><MentorshipStories /></div>
-      <MentorshipStoryAdmin />
     </Section>
 
     <Section eyebrow="What it can look like" title="Support that starts where you are." className="mentorship-section bg-white">
