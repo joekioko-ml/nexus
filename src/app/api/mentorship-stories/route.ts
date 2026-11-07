@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { auth } from "@/auth";
 import { getSupabaseAdmin } from "@/lib/supabase-admin";
 
 export async function GET() {
@@ -16,8 +17,8 @@ export async function GET() {
 }
 
 export async function POST(request: Request) {
-  const adminToken = process.env.MENTORSHIP_STORIES_ADMIN_TOKEN;
-  if (!adminToken || request.headers.get("authorization") !== `Bearer ${adminToken}`) {
+  const session = await auth();
+  if (session?.user?.role !== "admin") {
     return NextResponse.json({ error: "Admin access is not configured or authorized." }, { status: 401 });
   }
 
