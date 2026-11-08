@@ -16,6 +16,20 @@ const contacts = [
     href: "https://www.kemri.go.ke/kemri-and-partners-launch-handbook-to-strengthen-suicide-prevention/",
   },
   {
+    title: "Befrienders Kenya",
+    numbers: ["+254 722 178 177"],
+    description: "Psychological support for people in distress. The helpline is listed as open Monday to Friday, 9am–5pm; it is not a 24-hour service.",
+    source: "Lifeline International",
+    href: "https://lifeline-international.com/member/kenya/",
+  },
+  {
+    title: "Nairobi Women’s Hospital GVRC",
+    numbers: ["0800 720 565", "+254 719 638 006"],
+    description: "Gender Violence Recovery Centre contact numbers listed in a Kenya government referral directory.",
+    source: "Kenya Development Corporation referral directory",
+    href: "https://www.kdc.go.ke/sites/default/files/publication/documents/KDC%20GRIEVANCE%20MANAGEMENT%20MECHANISM.pdf",
+  },
+  {
     title: "Child Helpline Kenya",
     numbers: ["116"],
     description: "A child helpline for children and young people who need help or protection.",
