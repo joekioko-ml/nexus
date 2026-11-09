@@ -5,8 +5,8 @@ import nodemailer from "nodemailer";
 import { revalidatePath } from "next/cache";
 import type { ContactActionState } from "@/lib/contact-action-state";
 
-const inbox = "nexusresigen@gmail.com";
-const SMTP_SEND_TIMEOUT_MS = 5_000;
+const inbox = "nexusrisegen@gmail.com";
+const SMTP_SEND_TIMEOUT_MS = 8_000;
 const supportOptions = [
   "Career & Education Guidance",
   "Navigating a personal struggle / Life transition",
@@ -42,14 +42,17 @@ async function notifyInbox(subject: string, text: string, replyTo?: string) {
 
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
-    port: 465,
-    secure: true,
+    // Port 587 uses STARTTLS and is more widely reachable than implicit TLS
+    // on port 465. `requireTLS` prevents sending credentials without TLS.
+    port: 587,
+    secure: false,
+    requireTLS: true,
     auth: { user, pass },
     // Bound DNS/TCP/TLS and SMTP waits so an unavailable SMTP connection
     // cannot keep the Server Action open indefinitely.
     dnsTimeout: 3_000,
-    connectionTimeout: 4_000,
-    greetingTimeout: 4_000,
+    connectionTimeout: 5_000,
+    greetingTimeout: 5_000,
     socketTimeout: 8_000,
   });
 
@@ -130,7 +133,7 @@ export async function submitMentorshipRequest(
     return { success: true, status: "success", message: "Thank you. Your request has been received by our Safeguarding Lead. Expect a personalized response within 24–48 hours." };
   } catch (error) {
     console.error("EMAIL ERROR:", error);
-    return { success: true, status: "warning", message: "Your request was saved securely, but the email notification could not be delivered. Please contact nexusresigen@gmail.com if you need a response soon." };
+    return { success: true, status: "warning", message: "Your request was saved securely, but the email notification could not be delivered. Please contact nexusrisegen@gmail.com if you need a response soon." };
   }
 }
 

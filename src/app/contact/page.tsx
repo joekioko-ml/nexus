@@ -96,7 +96,7 @@ export default function ContactPage() {
           <div>
             <p className="text-sm font-bold uppercase tracking-[.16em] text-indigo-200">General directory</p>
             <h2 id="directory-heading" className="mt-2 text-2xl font-bold sm:text-3xl">There’s a person behind every message.</h2>
-            <a className="mt-3 inline-flex rounded-sm text-base font-semibold text-white underline decoration-white/40 underline-offset-4 hover:decoration-white" href="mailto:nexusresigen@gmail.com">nexusresigen@gmail.com</a>
+            <a className="mt-3 inline-flex rounded-sm text-base font-semibold text-white underline decoration-white/40 underline-offset-4 hover:decoration-white" href="mailto:nexusrisegen@gmail.com">nexusrisegen@gmail.com</a>
           </div>
           <a href="https://whatsapp.com/channel/0029Vb8cWdZDZ4LRhsbrkw23" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-16 items-center justify-center gap-4 rounded-full bg-emerald-400 py-2 pl-2 pr-6 font-bold text-emerald-950 shadow-lg transition hover:-translate-y-0.5 hover:bg-emerald-300 active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">
             <Image src="/channel.png" alt="Nexus WhatsApp channel" width={56} height={56} className="size-14 rounded-full border-2 border-white object-cover shadow-sm" />
@@ -145,7 +145,7 @@ export default function ContactPage() {
             <p className="mt-5 rounded-2xl border-l-4 border-indigo-500 bg-indigo-50 px-5 py-4 text-base leading-7 text-indigo-950">Nexus provides community peer support and mentorship. We are not a clinical therapy or emergency medical service.</p>
             <div className="mt-6 flex gap-4 rounded-2xl border border-emerald-200 bg-emerald-50 p-5 text-emerald-950">
               <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" className="mt-0.5 size-7 shrink-0 stroke-current" strokeWidth="1.8"><rect x="4" y="10" width="16" height="11" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3" strokeLinecap="round" /></svg>
-              <div><p className="font-bold">Data is encrypted in transit and protected by strict Row Level Security (RLS).</p><p className="mt-2 text-sm leading-6 text-emerald-900">The database record is insert-only for the web and readable only by the safeguarding_lead role. A separate notification copy is emailed to nexusresigen@gmail.com; please share only the details needed for a response.</p></div>
+              <div><p className="font-bold">Data is encrypted in transit and protected by strict Row Level Security (RLS).</p><p className="mt-2 text-sm leading-6 text-emerald-900">The database record is insert-only for the web and readable only by the safeguarding_lead role. A separate notification copy is emailed to nexusrisegen@gmail.com; please share only the details needed for a response.</p></div>
             </div>
             <p className="mt-4 text-sm leading-6 text-slate-500">Share only what you feel comfortable sharing. The form is not monitored for emergencies.</p>
           </div>
